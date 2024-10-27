@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<HTMl lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <title>GRAFINDICE</title>
+    </head>
+
+<body>
+
+    <NAV>
+        <H1>ÍNDICES DE CALOR AO LONGO DO ANO</H1>
+        <Ul>
+            <li><a class="btn-link" href="c:\Users\erica\OneDrive\Desktop\Omar\PJI410\index.HTML">HOME</a></li>           
+        </Ul>
+    </NAV>
+
+    <canvas class="line-chart", height="100", width="280"></canvas>
+    
+    <script>
+        var ctx = document.getElementsByClassName("line-chart");
+
+        // Type, Data and Options
+        var chartGraph = new Chart(ctx, {
+            type: 'line',
+            data: {
+            labels: ["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"],
+                datasets: [
+                    {
+                    label: "GRÁFICO DE TEMPERATURAS",
+                    data: [25,30,35,20,25,38,27,40,22,20,15,25],
+                    borderWidth: 4,
+                    borderColor: 'rgba(77,166,253,1)',
+                    backgroundColor: ['#000', '#901','#252','#83','#344','#705','#466','#607','#558','#123','#234','345']
+                    },
+                    {
+                    label: "GRÁFICO DE UMIDADE",
+                    data: [5,2,8,12,18,22,15,13,11,7,5,9],
+                    borderWidth: 3,
+                    borderColor: 'rgba(150,166,99,1)',
+                    backgroundColor: ['#000', '#901','#252','#83','#344','#705','#466','#607','#558','#123','#234','345']
+                    },
+                    {
+                    label: "ÍNDICE DE CALOR",
+                    data: [20,28,27,8,7,16,12,27,11,13,10,16],
+                    borderWidth: 4,
+                    borderColor: 'rgba(77,966,253,1)',
+                    backgroundColor: ['#000', '#901','#252','#83','#344','#705','#466','#607','#558','#123','#234','345']
+                    },
+                        ]
+                }
+        })
+        
+
+    </script>
+
+</body>

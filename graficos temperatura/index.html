@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<HTMl lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <title>PI410 - UNIVESP</title>
+        <title>GRAPHTEMP</title>
+    </head>
+
+<body>
+
+    <NAV>
+        <H1>TEMPERATURAS AO LONGO DO ANO</H1>
+        <Ul>
+            <li><a class="btn-link" href="c:\Users\erica\OneDrive\Desktop\Omar\PJI410\index.HTML">HOME</a></li>           
+        </Ul>
+    </NAV>
+
+
+    <canvas class="line-chart", height="100", width="280"></canvas>
+    
+    <script>
+        var ctx = document.getElementsByClassName("line-chart");
+
+        // Type, Data and Options
+        var chartGraph = new Chart(ctx, {
+            type: 'line',
+            data: {
+            labels: ["Jan","Fev","Mar","Abr","Mai","Jun","Jul","Ago","Set","Out","Nov","Dez"],
+                datasets: [{
+                    label: "GRÁFICO DE TEMPERATURAS",
+                    data: [25,30,35,20,25,38,27,40,22,20,15,25],
+                    borderWidth: 4,
+                    borderColor: 'rgba(77,166,253,1)',
+                    backgroundColor: ['#000', '#901','#252','#83','#344','#705','#466','#607','#558','#123','#234','345']
+                }]
+            }
+        })
+        
+
+    </script>
+
+</body>
