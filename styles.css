@@ -75,15 +75,15 @@ button:hover {
 }
 
 .ÍNDICE-DE-CALOR {
-    background-color: #3e3e3e;
+    background-color: #ffca1b;
     outline-color: #251e1e;
     margin-bottom: 15px;
     margin-right: 15px;
     margin-left: 15px;
 }
 
-.PREVISÃO {
-    background-color: #010066;
+.COMPARE-DE-DADOS {
+    background-color: #0aeb2c;
     outline-color: aliceblue;
     margin-bottom: 15px;
     margin-right: 15px;
